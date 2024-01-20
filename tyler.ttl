@@ -1,0 +1,41 @@
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skill: <http://example.org/skills/> .
+@prefix org: <http://example.org/organizations/> .
+
+ex:TylerDiBartolo
+  a foaf:Person ;
+  foaf:name "Tyler DiBartolo" ;
+  foaf:birthPlace ex:BrooklynNY ;
+  ex:generation "second" ;
+  ex:ethnicity "Italian-American" ;
+  schema:interestedIn ex:SymbolicAI, ex:Clojure, ex:JSONLD, ex:DataArchitecture, ex:SoftwareDesign, ex:TechnicalWriting, ex:KnowledgeManagement ;
+  ex:workedAt org:IBM, org:WarnerBrosDiscovery ;
+  skill:hasExperience ex:SoftwareEngineering, ex:UXDesign, ex:ProductManagement, ex:SalesConsulting ;
+  skill:isSkilledIn skill:Python, skill:Java, skill:Clojure, skill:Jira, skill:Confluence, skill:Git, skill:AWS, skill:IBMCloud, skill:UML, skill:RDF .
+
+ex:BrooklynNY
+  a schema:Place ;
+  schema:addressLocality "Brooklyn" ;
+  schema:addressRegion "New York" .
+
+org:IBM a schema:Organization ; rdfs:label "IBM" .
+org:WarnerBrosDiscovery a schema:Organization ; rdfs:label "Warner Bros. Discovery" .
+
+skill:SoftwareEngineering a schema:Thing ; rdfs:label "Software Engineering" .
+skill:UXDesign a schema:Thing ; rdfs:label "UX Design" .
+skill:ProductManagement a schema:Thing ; rdfs:label "Product Management" .
+skill:SalesConsulting a schema:Thing ; rdfs:label "Sales Consulting" .
+skill:Python a schema:Thing ; rdfs:label "Python" .
+skill:Java a schema:Thing ; rdfs:label "Java" .
+skill:Clojure a schema:Thing ; rdfs:label "Clojure" .
+skill:Jira a schema:Thing ; rdfs:label "Jira" .
+skill:Confluence a schema:Thing ; rdfs:label "Confluence" .
+skill:Git a schema:Thing ; rdfs:label "Git" .
+skill:AWS a schema:Thing ; rdfs:label "AWS" .
+skill:IBMCloud a schema:Thing ; rdfs:label "IBM Cloud" .
+skill:UML a schema:Thing ; rdfs:label "UML" .
+skill:RDF a schema:Thing ; rdfs:label "RDF" .
